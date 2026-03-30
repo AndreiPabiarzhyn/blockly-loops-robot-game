@@ -8,7 +8,7 @@
 
 ## Демо
 
-👉 (добавишь позже, если выложишь на GitHub Pages)
+👉 https://andreipabiarzhyn.github.io/blockly-loops-robot-game/
 
 ---
 
