@@ -365,7 +365,6 @@ function showFailModal(msg) {
   `;
   dlg.showModal();
 
-  // ✅ обработчик кнопки вместо формы
   dlg.querySelector('#okBtn').addEventListener('click', () => {
     dlg.close();
 
