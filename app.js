@@ -368,8 +368,20 @@ function showFailModal(msg) {
   // ✅ обработчик кнопки вместо формы
   dlg.querySelector('#okBtn').addEventListener('click', () => {
     dlg.close();
-    state.rabbit = { ...state.start };
-    renderBoard();
+
+  // 🔥 ПОЛНЫЙ reset состояния (как в run)
+  state.grid = state.original.map(row => [...row]);
+
+  state.carrots = 0;
+  for (let y = 0; y < state.size; y++) {
+    for (let x = 0; x < state.size; x++) {
+      if (state.grid[y][x] === 'C') state.carrots++;
+    }
+  }
+
+  state.rabbit = { ...state.start };
+
+  renderBoard();
   });
 }
 
