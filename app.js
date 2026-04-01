@@ -368,7 +368,7 @@ function showFailModal(msg) {
   dlg.querySelector('#okBtn').addEventListener('click', () => {
     dlg.close();
 
-  // 🔥 ПОЛНЫЙ reset состояния (как в run)
+
   state.grid = state.original.map(row => [...row]);
 
   state.carrots = 0;
