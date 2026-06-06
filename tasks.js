@@ -142,10 +142,10 @@ const LEVELS_RABBIT = [
   {
     size: 5,
     grid: [
-      "R.C.W",
-      ".W.C.",
-      ".C.W.",
-      ".W..C",
+      "RWC.W",
+      ".WCC.",
+      ".WCWC",
+      "....C",
       "....E"
     ],
     goal: "Собери все и дойди до портала.",
